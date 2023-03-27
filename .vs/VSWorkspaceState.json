@@ -2,11 +2,13 @@
   "ExpandedNodes": [
     "",
     "\\bistecca",
+    "\\main",
     "\\static",
     "\\static\\assets",
+    "\\static\\assets\\css",
     "\\static\\images",
     "\\templates"
   ],
-  "SelectedNode": "\\static\\images\\bistecca.jpg",
+  "SelectedNode": "\\templates\\base.html",
   "PreviewInSolutionExplorer": false
 }

@@ -7,41 +7,56 @@
 <p>Ez loans belli belli</p>
 
 <form action="{% url 'search_results' %}" method="get">
-    <input type="text" name="location" placeholder="Enter a destination">
-    <input type="date" name="checkin" placeholder="Check-in date">
-    <input type="date" name="checkout" placeholder="Checkout date">
-    <input type="number" name="guests" placeholder="Number of guests">
+    <input type="text" name="location" placeholder="Cerca un annuncio...">
+    <input type="date" name="checkin" placeholder="Cerca da questa data in poi">
+    <input type="number" name="guests" placeholder="Min">
+    <input type="number" name="guests" placeholder="Max">
     <button type="submit">Search</button>
 </form>
 <br />
 <br />
 
-<div class="hotel-deals">
-    <h2>Hotel Deals</h2>
-    <div class="deal-list">
-        <div class="deal">
-            <img src="{% static "/images/bistecca.jpg" %}" alt="Bistecche"/>
-            <h3>Bistecche per tutti</h3>
-            <p>Le bistecche en bone</p>
-            <a href="#">Magnele Adesso</a>
-        </div>
-        <br /><br />
-        <div class="deal">
-            <img src="{% static "/images/bistecca.jpg" %}" alt="Bistecche" />
-            <h3>Deal 2</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            <a href="#">Book Now</a>
-        </div>
-        <br /><br />
-        <div class="deal">
-            <img src="{% static "/images/bistecca.jpg" %}" alt="Bistecche" />
-            <h3>Deal 3</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            <a href="#">Book Now</a>
-        </div>
-        <!-- Add more deals here -->
+
+<div class="deals-container">
+    <div class="deal">
+        <img src="{% static '/images/bistecca.jpg' %}" alt="Deal 1">
+        <h3>Annuncio 1</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <a href="#">Visualizza</a>
     </div>
+    <div class="deal">
+        <img src="{% static '/images/bistecca.jpg' %}" alt="Deal 2">
+        <h3>Annuncio 2</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <a href="#">Visualizza</a>
+    </div>
+    <div class="deal">
+        <img src="{% static '/images/bistecca.jpg' %}" alt="Deal 3">
+        <h3>Annuncio 3</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <a href="#">Visualizza</a>
+    </div>
+    <div class="deal">
+        <img src="{% static '/images/bistecca.jpg' %}" alt="Deal 4">
+        <h3>Annuncio 4</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <a href="#">Visualizza</a>
+    </div>
+    <div class="deal">
+        <img src="{% static '/images/bistecca.jpg' %}" alt="Deal 5">
+        <h3>Annuncio 5</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <a href="#">Visualizza</a>
+    </div>
+    <div class="deal">
+        <img src="{% static '/images/bistecca.jpg' %}" alt="Deal 6">
+        <h3>Annuncio 6</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <a href="#">Visualizza</a>
+    </div>
+    <!-- Add more deal items here -->
 </div>
+
 
 {% endblock %}
 

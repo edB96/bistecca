@@ -4,14 +4,14 @@
 
 {% block content %}
 <h1>Search Results</h1>
-  {% if hotels %}
+  {% if deals %}
 <ul>
-    {% for hotel in hotels %}
+    {% for deal in deals %}
     <li>
-        <h2>{{ hotel.name }}</h2>
-        <p>{{ hotel.description }}</p>
-        <p>Price per night: {{ hotel.price }}</p>
-        <a href="{% url 'hotel_detail' hotel.id %}">View Details</a>
+        <h2>{{ deal.name }}</h2>
+        <p>{{ deal.description }}</p>
+        <p>Price per night: {{ deal.price }}</p>
+        <a href="{% url 'deal_detail' deal.id %}">View Details</a>
     </li>
     {% endfor %}
 </ul>
@@ -19,3 +19,5 @@
 <p>No hotels found.</p>
   {% endif %}
 {% endblock %}
+
+

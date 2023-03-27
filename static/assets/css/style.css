@@ -50,15 +50,15 @@ header {
     z-index: 1000;
 }
 
-    header h1 {
-        color: #0099FF;
-    }
+        header h1 {
+            color: #0099FF;
+        }
 
-    header nav {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
+        header nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
 
         header nav ul {
             margin: 0;
@@ -71,16 +71,28 @@ header {
             margin: 0 1rem;
         }
 
-            header nav li:first-child {
-                margin-left: 0;
-            }
+        header nav li:first-child {
+            margin-left: 0;
+        }
 
-            header nav li:last-child {
-                margin-right: 0;
-            }
+        header nav li:last-child {
+            margin-right: 0;
+        }
+
+.navbar-brand {
+    font-size: 22px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+
+.container-fluid{
+    /*padding-left: 10px;*/
+    padding-right: 50px;
+}
+
 
 /* Buttons */
-
 button, .button {
     display: inline-block;
     background-color: #0099FF;
@@ -163,43 +175,54 @@ input[type="submit"] {
             color: #FFFFFF;
         }
 
-/* Hotel list */
+/* deals */
 
-.hotel-list {
+.deal-list {
     display: flex;
     flex-wrap: wrap;
     margin: 0 -1rem;
 }
 
-.hotel {
-    width: 100%;
-    max-width: 400px;
+.deals-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+}
+
+.deal {
+    /*width: 100%;*/
+    width: 260px;
     margin: 1rem;
+    text-align: center;
+    padding: 10px;
     background-color: #FFFFFF;
     border-radius: 3px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     overflow: hidden;
 }
 
-    .hotel img {
+
+    .deal img {
         width: 100%;
         height: 200px;
+        width: 200px;
         object-fit: cover;
     }
 
-    .hotel h2 {
+    .deal h2 {
         font-size: 1.5rem;
         margin: 1rem;
     }
 
-    .hotel p {
+    .deal p {
         margin: 1rem;
         font-size: 0.9rem;
     }
 
-    .hotel .button {
+    .deal .button {
         margin: 1rem;
     }
+
 
 /* Footer */
 
