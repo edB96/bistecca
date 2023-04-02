@@ -60,4 +60,5 @@ def registration_success(request):
 
 
 def search_results(request):
+    messages.info('CIAO STO CERCANDO')
     return render(request, 'search_results.html')
