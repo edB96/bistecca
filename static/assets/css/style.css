@@ -130,10 +130,12 @@ input[type="text"], input[type="email"], input[type="password"], select, textare
     border: 1px solid #CCCCCC;
     margin-bottom: 1rem;
     font-size: 1rem;
+    max-width: 200px;
 }
 
 textarea {
     height: 150px;
+    max-width: 200px;
 }
 
 input[type="submit"] {
@@ -145,6 +147,7 @@ input[type="submit"] {
     font-size: 1rem;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    max-width: 200px;
 }
 
     input[type="submit"]:hover {

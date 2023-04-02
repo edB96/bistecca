@@ -3,7 +3,12 @@
 {% load static %}
 
 {% block content %}
+{% if user.is_authenticated %}
+<h1>Welcome, {{user_name}}!</h1>
+<h2>Role: {{user_role}}</h2>
+{% else %}
 <h1>Welcome to Softloans!</h1>
+{% endif %}
 <p>Ez loans belli belli</p>
 
 <form action="{% url 'search_results' %}" method="get">

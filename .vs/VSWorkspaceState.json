@@ -3,12 +3,8 @@
     "",
     "\\bistecca",
     "\\main",
-    "\\static",
-    "\\static\\assets",
-    "\\static\\assets\\css",
-    "\\static\\images",
     "\\templates"
   ],
-  "SelectedNode": "\\templates\\base.html",
+  "SelectedNode": "\\main\\views.py",
   "PreviewInSolutionExplorer": false
 }

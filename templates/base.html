@@ -29,7 +29,16 @@
                     <li><a href="#">About</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
+                    {% block navbar %}
+                    {% endblock %}
                     {% if user.is_authenticated %}
+                    {% if user_role == 'seller' %}
+                    {% include 'navbar_templates/seller_navbar.html' %}
+                    {% elif user_role == 'buyer' %}
+                    {% include 'navbar_templates/buyer_navbar.html' %}
+                    {% elif user_role == 'partner' %}
+                    {% include 'navbar_templates/partner_navbar.html' %}
+                    {% endif %}
                     <li><a href="#">My Account</a></li>
                     <li><a href="{% url 'logout' %}">Logout</a></li>
                     {% else %}
