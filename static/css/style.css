@@ -130,12 +130,12 @@ input[type="text"], input[type="email"], input[type="password"], select, textare
     border: 1px solid #CCCCCC;
     margin-bottom: 1rem;
     font-size: 1rem;
-    max-width: 200px;
+    max-width: 500px;
 }
 
 textarea {
     height: 150px;
-    max-width: 200px;
+    max-width: 500px;
 }
 
 input[type="submit"] {
@@ -147,7 +147,7 @@ input[type="submit"] {
     font-size: 1rem;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    max-width: 200px;
+    max-width: 500px;
 }
 
     input[type="submit"]:hover {
@@ -249,4 +249,8 @@ footer {
             text-decoration: underline;
         }
 
-
+.date select {
+    display: inline-block;
+    width: auto;
+    margin-right: 10px;
+}

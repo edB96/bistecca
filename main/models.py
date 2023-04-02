@@ -1,3 +1,4 @@
+from datetime import datetime
 from django.db import models
 from django.contrib.auth.models import User
 
@@ -12,9 +13,16 @@ class UserRole(models.Model):
 
 
 class Deal(models.Model):
-    title = models.CharField(max_length=100)
-    description = models.TextField(max_length=1000)
-    price = models.DecimalField(max_digits=8, decimal_places=2)
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    title = models.CharField(max_length=100, default='nessuno')
+    idcard_fronte = models.ImageField(verbose_name="Carta d'identita - Fronte", upload_to='images/idcards/fronte')
+    idcard_retro = models.ImageField(verbose_name="Carta d'identita - Retro", upload_to='images/idcards/retro')
+    ts_fronte = models.ImageField(verbose_name="Tessera Sanitatia - Fronte", upload_to='images/TS/fronte')
+    ts_retro = models.ImageField(verbose_name="Tessera Sanitatia - Retro", upload_to='images/TS/retro')
+    data_emissione = models.DateField(default=datetime.now())
+    data_scadenza = models.DateField(default=datetime.now())
+    numero_documento = models.CharField(max_length=20)
+    comune_rilascio = models.CharField(max_length=100)
 
     def __str__(self):
         return self.title

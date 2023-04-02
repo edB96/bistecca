@@ -1,4 +1,3 @@
-#from multiprocessing import context
 from django.shortcuts import render, redirect
 from django.contrib.auth.forms import AuthenticationForm
 from django.contrib.auth.models import User, auth
@@ -58,7 +57,10 @@ def add_deal(request):
 def registration_success(request):
     return render(request, 'registration_success.html')
 
+def upload_files(request):
+    return render(request, 'upload_files.html')
+
 
 def search_results(request):
-    messages.info('CIAO STO CERCANDO')
+    messages.info('CIAO CIAO')
     return render(request, 'search_results.html')

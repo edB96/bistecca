@@ -2,9 +2,15 @@
   "ExpandedNodes": [
     "",
     "\\bistecca",
-    "\\main",
+    "\\media",
+    "\\media\\images",
+    "\\media\\images\\idcards",
+    "\\media\\images\\TS",
+    "\\static",
+    "\\static\\css",
+    "\\static\\js",
     "\\templates"
   ],
-  "SelectedNode": "\\main\\views.py",
+  "SelectedNode": "\\main\\forms.py",
   "PreviewInSolutionExplorer": false
 }
