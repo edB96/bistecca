@@ -1,4 +1,4 @@
-/* General styles */
+/* General styles 
 
 body {
     font-family: Arial, sans-serif;
@@ -37,7 +37,7 @@ p {
     margin: 0 0 1rem;
 }
 
-/* Header */
+ Header 
 
 header {
     background-color: #FFFFFF;
@@ -87,12 +87,12 @@ header {
 
 
 .container-fluid{
-    /*padding-left: 10px;*/
+    padding-left: 10px;
     padding-right: 50px;
 }
 
 
-/* Buttons */
+ Buttons 
 button, .button {
     display: inline-block;
     background-color: #0099FF;
@@ -109,7 +109,7 @@ button, .button {
         background-color: #0066CC;
     }
 
-/* Forms */
+ Forms 
 
 form {
     margin: 0;
@@ -154,7 +154,7 @@ input[type="submit"] {
         background-color: #0066CC;
     }
 
-/* Search */
+ Search 
 
 .search {
     display: flex;
@@ -178,7 +178,7 @@ input[type="submit"] {
             color: #FFFFFF;
         }
 
-/* deals */
+ deals 
 
 .deal-list {
     display: flex;
@@ -193,7 +193,7 @@ input[type="submit"] {
 }
 
 .deal {
-    /*width: 100%;*/
+    width: 100%;
     width: 260px;
     margin: 1rem;
     text-align: center;
@@ -227,7 +227,7 @@ input[type="submit"] {
     }
 
 
-/* Footer */
+ Footer 
 
 footer {
     background-color: #333333;
@@ -254,3 +254,4 @@ footer {
     width: auto;
     margin-right: 10px;
 }
+*/

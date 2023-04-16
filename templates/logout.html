@@ -5,7 +5,10 @@
 
 {% block content %}
 <h2>Logout</h2>
-<p>Are you sure you want to logout?</p>
-<a href="{% url 'index' %}">Logout</a>
+<form action="{% url 'main:logout_after' %}" method="post">
+    {% csrf_token %}
+    <p>Are you sure you want to log out?</p>
+    <button type="submit">Logout</button>
+    <a href="{% url 'index' %}">Cancel</a>
+</form>
 {% endblock %}
-

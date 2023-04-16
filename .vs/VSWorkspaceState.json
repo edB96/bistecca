@@ -2,15 +2,13 @@
   "ExpandedNodes": [
     "",
     "\\bistecca",
-    "\\media",
-    "\\media\\images",
-    "\\media\\images\\idcards",
-    "\\media\\images\\TS",
+    "\\main",
     "\\static",
     "\\static\\css",
     "\\static\\js",
-    "\\templates"
+    "\\templates",
+    "\\templates\\add_deal"
   ],
-  "SelectedNode": "\\main\\forms.py",
+  "SelectedNode": "\\templates\\add_deal\\add_deal_anagrafica.html",
   "PreviewInSolutionExplorer": false
 }

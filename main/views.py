@@ -1,9 +1,10 @@
 from django.shortcuts import render, redirect
 from django.contrib.auth.forms import AuthenticationForm
 from django.contrib.auth.models import User, auth
-from .forms import RegistrationForm, DealForm
+from .forms import RegistrationForm, AdeguataForm, AnagraficaForm
 from .models import UserRole
 from django.contrib import messages
+
 
 
 # Create your views here.
@@ -27,12 +28,12 @@ def login_view(request):
     context = {'form': form}
     return render(request, 'login.html', context)
 
+def logout_after(request):
+    auth.logout(request)
+    return redirect('index')
 
 def logout_view(request):
-    user_role = UserRole.objects.filter(user=request.user.id).first()
-    auth.logout(request)
     return render(request, 'logout.html')
-
 
 def registration_view(request):
     if request.method == 'POST':
@@ -49,10 +50,15 @@ def registration_view(request):
     context = {'form': form}
     return render(request, 'registration.html', context)
 
-def add_deal(request):
-    form = DealForm()
+def add_deal_adeguata(request):
+    form = AdeguataForm()
     context = {'form': form}
-    return render(request, 'add_deal.html', context)
+    return render(request, 'add_deal/add_deal_adeguata.html', context)
+
+def add_deal_anagrafica(request):
+    form = AnagraficaForm()
+    context = {'form': form}
+    return render(request, 'add_deal/add_deal_anagrafica.html', context)
 
 def registration_success(request):
     return render(request, 'registration_success.html')

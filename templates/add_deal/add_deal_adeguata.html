@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% load static %}
+{% load crispy_forms_tags %}
+
+{% block content%}
+<br />
+<h1>Adeguata Verifica</h1>
+<br />
+
+
+<form action="upload_files" method="post">
+    {% csrf_token %}
+    {{form|crispy}}
+    <a href="{% static 'privacy.pdf' %}" target="_blank">Informativa sulla privacy</a>
+    <button type="submit">Submit</button>
+</form>
+
+{% endblock %}
+
+{% block extra_js %}
+{{ form.media }}
+{% endblock %}
